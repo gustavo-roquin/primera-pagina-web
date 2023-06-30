@@ -1,18 +1,113 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-  <style>
-    h1 {
-      color: blue;
-      text-align: center;
-    }
-    p {
-      font-family: Arial;
-      font-size: 18px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Portafolio de Juan Pérez</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            font-size: 32px;
+            font-weight: bold;
+            color: #333333;
+        }
+        .nav {
+            list-style: none;
+            display: flex;
+        }
+        .nav li {
+            margin-left: 20px;
+        }
+        .nav a {
+            text-decoration: none;
+            color: #333333;
+        }
+        .nav a:hover {
+            color: #999999;
+        }
+        .intro {
+            margin-top: 40px;
+            text-align: center;
+        }
+        .intro h1 {
+            font-size: 48px;
+            color: #333333;
+        }
+        .intro p {
+            font-size: 24px;
+            color: #999999;
+        }
+        .projects {
+            margin-top: 60px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
+        .project {
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        .project img {
+            width: 100%;
+            height: auto;
+        }
+        .project h3 {
+            font-size: 24px;
+            color: #333333;
+            margin-top: 10px;
+        }
+        .project p {
+            font-size: 16px;
+            color: #999999;
+            margin-top: 5px;
+        }
+    </style>
 </head>
 <body>
-  <h1>Mi página web</h1>
-  <p>Esta es una página web simple que usa HTML y CSS para mostrar un título y un párrafo.</p>
+    <div class="container">
+        <div class="header">
+            <div class="logo">Juan Pérez</div>
+            <ul class="nav">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Proyectos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="intro">
+            <h1>Hola, soy Juan Pérez</h1>
+            <p>Un copywriter profesional con más de 5 años de experiencia.</p>
+        </div>
+        <div class="projects">
+            <div class="project">
+                <img src="proyecto1.jpg" alt="Proyecto 1">
+                <h3>Proyecto 1</h3>
+                <p>Un texto persuasivo para una campaña de marketing digital.</p>
+            </div>
+            <div class="project">
+                <img src="proyecto2.jpg" alt="Proyecto 2">
+                <h3>Proyecto 2</h3>
+                <p>Un artículo informativo para una revista online.</p>
+            </div>
+            <div class="project">
+                <img src="proyecto3.jpg" alt="Proyecto 3">
+                <h3>Proyecto 3</h3>
+                <p>Un guion creativo para un video promocional.</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
